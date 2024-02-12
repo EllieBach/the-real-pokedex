@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'titleFontSolid';
+    src: url(/fonts/Pokemon\ Solid.ttf);
+}
+
+@font-face {
+    font-family: 'titleFontHollow';
+    src: url(/fonts/Pokemon\ Hollow.ttf);
+}
+
+@font-face {
+    font-family: 'MaisonNeueBold';
+    src: url(/fonts/Maison\ neue\ Bold.ttf );
+}
+
+$titleFontSolid: 'titleFontSolid';
+$titleFontHollow:'titleFontHollow';
+$basicFont: 'MaisonNeueBold';

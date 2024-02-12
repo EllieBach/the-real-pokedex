@@ -1,0 +1,72 @@
+@import 'fonts.scss';
+@import 'mixins.scss';
+@import 'colors.scss';
+
+
+.searchTitle{
+  display: flex;
+  text-align: center;
+}
+
+#searchInput {
+  width: 15rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  border-radius: 20px;
+
+  .input-group {
+   
+    background: $light;
+    box-shadow: 3px 5px 10px rgb(0 0 0 / 5%);
+    display: flex;
+    padding: 20rem 20rem;
+
+    input {
+      flex: 1;
+      outline: none;
+      border: 0;
+      background: transparent;
+      font-size: 3rem; 
+      color: $dark;
+      font-family: $basicFont;
+    }
+
+    } 
+  }
+
+button{
+  height: 2.5rem;
+  width: 2.5rem;
+  background: $light url('./searchIcon.svg') no-repeat center center;
+  background-size: 50%;
+  display: flex;
+  border-radius: 2.4rem;
+}
+
+.screen {
+  width: 100%;
+  height: 75%;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.wrap {
+  @include center;
+  
+}
+
+.errorWrap{
+  @include center;
+}
+
+.pikaError{
+  width: 5rem;
+  height: 5rem;
+}
+
+.searchMenucont{
+  margin-top: 1rem;
+}

@@ -1,0 +1,78 @@
+@import 'fonts';
+@import 'colors';
+@import 'mixins';
+#app{
+    height: 100lvh;
+    overflow: hidden;
+    background-color: #71797E;
+}
+
+#pokemonName {
+    margin-top: 1.5rem;
+    @include center;
+    text-transform: uppercase;
+}
+
+.spriteCont {
+    height: 20rem;
+    width: 27rem;
+    border-radius: 0px 0px 432px 432px / 0px 0px 320px 320px;
+    font-family: $basicFont;
+}
+
+p {
+    font-family: $basicFont;
+}
+
+.pokemon-sprite {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.back {
+    padding-top: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.type {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border-radius: 2.5rem;
+    color: $Basic-font-color; 
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+.type img{
+    margin-left: 1rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+
+.pokemon-info-cont {
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    top: 0px; 
+    left: 0px; 
+    cursor: pointer;
+    z-index: 2; 
+}
+.pokemon-type-cont{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+
+}
