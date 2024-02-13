@@ -9,24 +9,24 @@ const app = document.querySelector<HTMLDivElement>("#app")!;
 
 // Type icons mapping
 const typeIcons: Record<string, string> = {
-    normal: './public/normal.svg',
-    fire: './public/fire.svg',
-    water: './public/water.svg',
-    electric: './public/electric.svg',
-    grass: './public/grass.svg',
-    ice: './public/ice.svg',
-    fighting: './public/fighting.svg',
-    poison: './public/poison.svg',
-    ground: './public/ground.svg',
-    flying: './public/flying.svg',
-    psychic: './public/psychic.svg',
-    bug: './public/bug.svg',
-    rock: './public/rock.svg',
-    ghost: './public/ghost.svg',
-    dragon: './public/dragon.svg',
-    dark: './public/dark.svg',
-    steel: './public/steel.svg',
-    fairy: './public/fairy.svg',
+    normal: '/normal.svg',
+    fire: '/fire.svg',
+    water: '/water.svg',
+    electric: '/electric.svg',
+    grass: '/grass.svg',
+    ice: '/ice.svg',
+    fighting: '/fighting.svg',
+    poison: '/poison.svg',
+    ground: '/ground.svg',
+    flying: '/flying.svg',
+    psychic: '/psychic.svg',
+    bug: '/bug.svg',
+    rock: '/rock.svg',
+    ghost: '/ghost.svg',
+    dragon: '/dragon.svg',
+    dark: '/dark.svg',
+    steel: '/steel.svg',
+    fairy: '/fairy.svg',
 };
 
 // Pokémon info function
@@ -39,7 +39,7 @@ export function pokemonInfo() {
 
     // Create the back button
     const backButton: HTMLImageElement = document.createElement("img");
-    backButton.src = "./public/left-arrow.svg";
+    backButton.src = "/left-arrow.svg";
     backButton.alt = "Back";
     backButton.classList.add("back-button");
     backButton.addEventListener('click', navigateBackToSearchMenu);
@@ -139,7 +139,7 @@ export function pokemonInfo() {
 
         // Set SVG icon based on type
         const typeIcon: HTMLImageElement = document.createElement("img");
-        typeIcon.src = typeIcons[type] || './public/default.svg';
+        typeIcon.src = typeIcons[type] || '/default.svg';
         typeElement.appendChild(typeIcon);
         pokemonTypeCont.appendChild(typeElement);
     }
