@@ -63,7 +63,7 @@ async function getPokemonDescription(pokemonName: string): Promise<string | null
       return null;
     }
   } catch (error) {
-    console.error(`Error fetching description for ${pokemonName}:`, error.message);
+    console.error(`Error fetching description for ${pokemonName}:`, error);
     return null;
   }
 }
@@ -78,7 +78,7 @@ async function fetchPokemonInfo(pokemonName: string): Promise<Pokemon> {
       description: description || 'No description available',
     };
   } catch (error) {
-    console.error(`Error fetching Pokemon information: ${error.message}`);
+    console.error(`Error fetching Pokemon information: ${error}`);
     throw error;
     
   }
@@ -95,7 +95,7 @@ function parsePokemonInfo(rawData: any, description: string | null): Pokemon {
     specialAttack: rawData.stats.find((stat: any) => stat.stat.name === 'special-attack').base_stat,
     specialDefense: rawData.stats.find((stat: any) => stat.stat.name === 'special-defense').base_stat,
     description: description || 'No description available',
-  
+    
   };
 }
 
