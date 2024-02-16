@@ -110,7 +110,7 @@ export function pokemonInfo() {
             types.forEach(type => displayType(type));
         }
 
-        // Set Pokémon stats (assuming these properties exist in your data)
+        // Set Pokémon stats
         const health: HTMLElement = document.createElement("p");
         health.innerText = `HP: ${pokemonInfo.health}`;
         const defense: HTMLElement = document.createElement("p");
